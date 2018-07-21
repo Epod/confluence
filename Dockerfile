@@ -26,8 +26,8 @@ RUN apk update -qq \
 
 COPY entrypoint.sh              /entrypoint.sh
 
-ARG CONFLUENCE_VERSION=6.5.0-m22
-ARG DOWNLOAD_URL=https://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-${CONFLUENCE_VERSION}.tar.gz
+ARG CONFLUENCE_VERSION=6.6.7
+ARG DOWNLOAD_URL=http://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-${CONFLUENCE_VERSION}.tar.gz
 
 COPY . /tmp
 
